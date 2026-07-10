@@ -1,0 +1,229 @@
+---
+permalink: /privacy/
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — MUTRL</title>
+    <meta name="robots" content="index,follow" />
+    <style>
+      :root {
+        --bg: #fbf7f2;
+        --card: #ffffff;
+        --ink: #2b2622;
+        --muted: #6f655d;
+        --accent: #c4623f;
+        --border: #ece3d8;
+        --radius: 16px;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap { max-width: 720px; margin: 0 auto; padding: 48px 22px 96px; }
+      header { margin-bottom: 32px; }
+      .brand {
+        font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase;
+        color: var(--accent); font-weight: 600; margin: 0 0 8px;
+      }
+      h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+      .eff { color: var(--muted); font-size: 15px; margin: 0; }
+      .card {
+        background: var(--card); border: 1px solid var(--border);
+        border-radius: var(--radius); padding: 28px 26px; margin-top: 24px;
+      }
+      h2 { font-size: 20px; margin: 28px 0 10px; }
+      h2:first-child { margin-top: 0; }
+      h3 { font-size: 17px; margin: 20px 0 6px; }
+      p, li { color: var(--ink); }
+      .muted { color: var(--muted); }
+      ul { padding-left: 22px; }
+      li { margin: 6px 0; }
+      a { color: var(--accent); }
+      strong { font-weight: 650; }
+      .lead { font-size: 18px; }
+      footer { margin-top: 40px; color: var(--muted); font-size: 14px; text-align: center; }
+      .pill {
+        display: inline-block; background: #f3ece3; border: 1px solid var(--border);
+        border-radius: 999px; padding: 4px 12px; font-size: 13px; color: var(--muted);
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <p class="brand">MUTRL</p>
+        <h1>Privacy Policy</h1>
+        <p class="eff">Effective July 10, 2026</p>
+      </header>
+
+      <div class="card">
+        <p class="lead">
+          MUTRL helps you stay close to the people who matter. We built it to be
+          private by default — your relationships are yours. This policy explains, in
+          plain language, what we collect, why, where it lives, and the choices you have.
+        </p>
+        <p class="muted">
+          Questions about anything here? Email
+          <a href="mailto:support@mutrl.com">support@mutrl.com</a>.
+        </p>
+
+        <h2>What we collect</h2>
+        <ul>
+          <li>
+            <strong>Contacts you import.</strong> If you grant contacts access, MUTRL
+            imports the people in your phone's address book who have a phone number —
+            their name and number, and (when available) their photo and birthday — so
+            you can start keeping in touch right away. These imported contacts are
+            stored on your device and synced to your private account (see below). You
+            can delete any contact, or your whole account, at any time. You can also
+            skip importing and add people one at a time instead.
+          </li>
+          <li>
+            <strong>Your content.</strong> The relationship notes, journal entries,
+            interactions, and reminders you create in the app.
+          </li>
+          <li>
+            <strong>Account information.</strong> Your email address and the
+            authentication data needed to sign you in (handled by our auth provider,
+            Supabase).
+          </li>
+          <li>
+            <strong>Diagnostics.</strong> Limited crash and error reports (via Sentry) so
+            we can fix problems. Personal text is redacted before it's sent.
+          </li>
+        </ul>
+
+        <h2>What we don't do</h2>
+        <ul>
+          <li>We <strong>don't sell</strong> your data.</li>
+          <li>We <strong>don't share</strong> your data for advertising.</li>
+          <li>We <strong>don't use</strong> your content to build advertising profiles.</li>
+          <li>
+            Your in-app usage analytics stay <strong>on your device</strong> — they are
+            stored locally and are not transmitted to us or any third-party analytics
+            service.
+          </li>
+        </ul>
+
+        <h2>Where your data lives</h2>
+        <p>
+          Your information is stored <strong>on your device</strong> in a local database,
+          and your sign-in credentials are kept in your device's encrypted system keystore
+          (the iOS Keychain). When you're signed in, your content also syncs to your
+          private space in our cloud database (Supabase), isolated to your account by
+          row-level security so no other user can reach it.
+        </p>
+
+        <h2>AI features</h2>
+        <p>
+          Optional features — including relationship search, contact-memory extraction,
+          suggested message drafts, and weekly summaries — use artificial intelligence.
+          Before any of these features can send data, MUTRL asks you to accept an AI data
+          sharing disclosure in Settings. If you accept and enable a feature, only the
+          <strong>specific context that request needs</strong> (such as a question,
+          relevant contact details and notes, or recent journal text) is sent through our
+          server to OpenAI to generate the result.
+        </p>
+        <ul>
+          <li>
+            OpenAI does <strong>not use API content to train its models by default</strong>.
+          </li>
+          <li>
+            OpenAI may retain abuse-monitoring logs containing request content for up to
+            30 days by default, subject to its current API data controls and legal
+            obligations.
+          </li>
+          <li>
+            AI features are <strong>optional</strong>. You can turn either feature group
+            off or withdraw AI data sharing consent at any time in Settings. After
+            withdrawal, MUTRL blocks new AI requests unless you consent again.
+          </li>
+        </ul>
+
+        <h2>Permissions we ask for</h2>
+        <ul>
+          <li>
+            <strong>Contacts (read-only).</strong> So MUTRL can import your phone
+            contacts for you to keep up with. We only read your contacts — we never
+            write to or modify your address book. Granting access is optional; you can
+            add people manually instead.
+          </li>
+          <li>
+            <strong>Notifications.</strong> So we can deliver the reminders you set. These
+            are scheduled <strong>locally on your device</strong> — we don't operate a
+            remote push system or collect a push token.
+          </li>
+        </ul>
+        <p class="muted">
+          Both permissions are optional and can be changed anytime in your device Settings.
+        </p>
+
+        <h2>Your choices &amp; deleting your data</h2>
+        <p>
+          You can edit or delete any of your content at any time. You can also
+          <strong>delete your account</strong> from within the app (Settings → Delete
+          Account). Doing so removes your account and your data from our cloud database and
+          wipes the app's data from your device. Routine encrypted backups maintained by
+          our infrastructure providers may retain residual copies for a short period before
+          they expire on their normal cycle.
+        </p>
+
+        <h2>Your privacy rights</h2>
+        <h3>If you're in the EEA or UK (GDPR)</h3>
+        <p>
+          You have the right to access, correct, export, or delete your personal data, to
+          object to or restrict certain processing, and to withdraw consent. Our legal
+          basis for processing is performing the service you've asked for and our
+          legitimate interest in operating and improving MUTRL. To exercise any of these
+          rights, email <a href="mailto:support@mutrl.com">support@mutrl.com</a>. You
+          also have the right to lodge a complaint with your local data protection
+          authority.
+        </p>
+        <h3>If you're in California (CCPA/CPRA)</h3>
+        <p>
+          You have the right to know what personal information we collect, to request its
+          deletion, and to correct inaccurate information. We <strong>do not sell or
+          share</strong> your personal information as those terms are defined under
+          California law, and we will not discriminate against you for exercising your
+          rights. To make a request, email
+          <a href="mailto:support@mutrl.com">support@mutrl.com</a>.
+        </p>
+
+        <h2>Children</h2>
+        <p>
+          MUTRL is not directed to children under <strong>13</strong>, and we do not
+          knowingly collect personal information from children under 13. If you believe a
+          child has provided us information, contact us and we'll delete it.
+        </p>
+
+        <h2>Changes to this policy</h2>
+        <p>
+          If we make material changes, we'll update the effective date above and, where
+          appropriate, notify you in the app. Continued use after an update means you
+          accept the revised policy.
+        </p>
+
+        <h2>Who we are &amp; how to reach us</h2>
+        <p>
+          MUTRL is operated by Thomas Tice.<br />
+          7201 Ranch Road 2222, Austin, Texas 78730, USA<br />
+          <a href="mailto:support@mutrl.com">support@mutrl.com</a>
+        </p>
+        <span class="pill">We're a small, independent app — a real person reads that inbox.</span>
+      </div>
+
+      <footer>
+        © 2026 Thomas Tice · MUTRL ·
+        <a href="/terms">Terms</a> · <a href="/support">Support</a>
+      </footer>
+    </div>
+  </body>
+</html>
